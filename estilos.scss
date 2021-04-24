@@ -1,0 +1,53 @@
+:root{
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+}
+
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: var(--dark-cyan);
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;  // 1rem 10px
+  }
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  .flex{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+  }
+
+  .card{
+      background-color: white;
+      width: 327px;
+      overflow: hidden;
+      border-radius: 16px;
+      box-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+
+      &-header{
+         width: 100%;
+         display: block;
+     } 
+
+     &-body{
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         flex-wrap: nowrap;
+
+         &-img{
+             border: 5px solid white;
+             border-radius: 50%;
+             margin-top: calc(-48px - 2px);
+             background-color: white;
+         }
+     }
+  }
